@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:500" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sonsie+One" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Order Form</title>
+  </head>
+  <body>
+    <div class="contentwrap">
+    <header>
+      <div class="logocontainer">
+        <img src="images/logo2.png" alt="Red Pepper Pizza Website Logo">
+      </div>
+      <nav role="navigation">
+        <a href="#">Home</a>
+        <a href="#">Prices</a>
+        <a class="current" href="orderform.html">Order Form</a>
+        <a href="#">Contact</a>
+      </nav>
+    </header>
+        <h1>Pizza Delivery Order Form</h1>
+    <form action="index.html" method="get">
+      <fieldset>
+        <legend class="formtop">
+          Pizza Selection
+        </legend>
+        <label>
+          Select your pizza:
+        </label>
+        <label for="selectpizza">
+        <select name="referrer" id="selectpizza">
+          <option value="margarita">Margarita</option>
+          <option value="vesuvio">Vesuvio</option>
+          <option value="busola">Busola</option>
+          <option value="red pepper special">Red Pepper Special</option>
+          <option value="hawaii">Hawaii</option>
+        </select>
+        </label>
+        <br />
+        <label>
+          Crust Type:
+          <input id="thin" type="radio" name="crust" value="thin" checked="checked" />
+        </label>
+          <label for="thin">Thin</label>
+        <label>
+          <input id="thick" type="radio" name="crust" value="thick" />
+        </label>
+          <label for="thick">Thick</label>
+        <br />
+        <label>
+          Optional Extras:
+          <input id="cheese" type="checkbox" name="cheese" value="cheese">
+        </label>
+          <label for="cheese">Extra Cheese</label>
+        <label>
+          <input id="bacon" type="checkbox" name="bacon" value="bacon">
+        </label>
+          <label for="bacon">Extra Bacon</label>
+        <label>
+          <input id="mushrooms" type="checkbox" name="mushrooms" value="mushrooms">
+        </label>
+          <label for="mushrooms">Mushrooms</label>
+      <br />
+      </fieldset>
+      <br />
+      <fieldset>
+        <legend class="formtop">
+          Contact Details
+        </legend>
+        <label for="name">
+          Name:
+          <input id="name" type="text" name="name" size="25" maxlength="100">
+        </label>
+        <br />
+        <label for="adress">
+          Adress:
+          <input id="adress" type="text" name="name" size="25" maxlength="100">
+        </label>
+        <br />
+        <label for="email">
+          Email:
+          <input id="email" type="email" name="email" size="25" maxlength="100">
+        </label>
+        <br />
+        <label for="phonenumber">
+          Phonenumber:
+          <input id="phonenumber" type="number" name="number" size="25">
+        </label>
+        <br />
+        <label for="button">
+          <input id="button" class="button" type="submit" name="btn" value="Submit">
+        </label>
+      </fieldset>
+    </form>
+    <br />
+    <h2>Our Menu</h2>
+    <table id="pizzas">
+  <tr>
+    <th>Pizza</th>
+    <th>Ingridients</th>
+    <th>Price</th>
+  </tr>
+  <tr>
+    <td>Margarita</td>
+    <td>Pepperoni, italian sausage, mozzarella cheese</td>
+    <td>5$</td>
+  </tr>
+  <tr>
+    <td>Vesuvio</td>
+    <td>Ground beef, red onions, green peppers, black olives</td>
+    <td>6.50$</td>
+  </tr>
+  <tr>
+    <td>Busola</td>
+    <td>Cheese, Ham</td>
+    <td>5.50$</td>
+  </tr>
+  <tr>
+    <td>Red Pepper Special</td>
+    <td>Ground beef, red onions, red peppers, olives</td>
+    <td>7$</td>
+  </tr>
+  <tr>
+    <td>Hawaii</td>
+    <td>Ham, bacon, pineapple & mozzarella cheese</td>
+    <td>6$</td>
+  </tr>
+</table>
+  <footer>
+    <h3>&copy; Red Pepper Pizza</h3>
+  </footer>
+  </div>
+  </body>
+</html>

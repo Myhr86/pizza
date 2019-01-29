@@ -1,0 +1,211 @@
+/* Global Styles */
+body {
+  background: linear-gradient(rgba(1, 116, 22, 0.8), rgba(211, 211, 211, 0.5));
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #0F0F0F;
+}
+img {
+  width: 950px;
+  height: auto;
+}
+h1 {
+  max-width: 950px;
+  margin: 0 auto;
+}
+.logocontainer {
+  border-bottom: 4px solid black;
+  max-width: 950px;
+  margin: 0 auto;
+}
+.contentwrap {
+  max-width: 950px;
+  margin: 0 auto;
+
+}
+h1 {
+  font-family: 'Sonsie One', cursive;
+  margin-top: 100px;
+  margin-bottom: 40px;
+  font-size: 40px;
+  text-align: center;
+  border-bottom: 2px dashed black;
+}
+h2 {
+  font-family: 'Sonsie One', cursive;
+  font-size: 30px;
+  padding-top: 50px;
+  padding-bottom: 0px;
+  max-width: 950px;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 10px;
+}
+h3 {
+  font-family: 'Sonsie One', cursive;
+  font-size: 12px;
+  float: right;
+}
+
+/* Navigation */
+nav {
+  margin: 25px;
+  margin-left: 25%;
+  margin-top: 30px;
+}
+a {
+  box-shadow: 3px 5px #363636;
+  font-family: 'Roboto Mono', monospace;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  margin: 20px;
+  color: #000000;
+  padding: 10px;
+  border-radius: 12px;
+  border: 1px solid black;
+  max-width: 950px;
+}
+a:link {
+  background: linear-gradient(rgba(243, 101, 17, 0.8), rgba(216, 28, 27, 0.5));
+}
+a:hover {
+  background-color: #e5672b;
+  cursor: pointer;
+}
+a.current {
+  background-color: lightgrey;
+}
+
+/* Form */
+form {
+  max-width: 950px;
+  margin: 0 auto;
+  font-family: 'Roboto Mono', monospace;
+}
+fieldset {
+  border: 1px solid black;
+}
+input[type=number], [type=email], [type=text] {
+  width: 100%;
+  padding: 6px;
+  margin: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  box-sizing: border-box;
+}
+input[type=checkbox], [type=radio] {
+  padding: 10px;
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  box-sizing: border-box;
+}
+.formtop {
+  margin-bottom: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+select option {
+  font-size: 16px;
+  font-weight: bold;
+}
+.button {
+  color: #000000;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  box-shadow: 3px 5px #363636;
+  float: right;
+  margin-top: 30px;
+  padding: 10px;
+  background: linear-gradient(rgba(243, 101, 17, 0.8), rgba(216, 28, 27, 0.5));
+  padding: 10px;
+  border-radius: 12px;
+  border: 1px solid black;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: 'Roboto Mono', monospace;
+}
+.button:hover {
+  background: none;
+  background-color: #017416;
+  cursor: pointer;
+  color: white;
+}
+.button:visited {
+  background-color: #D7975C;
+}
+
+/* Table */
+table {
+  max-width: 950px;
+  margin: 0 auto;
+}
+#pizzas {
+  color: #000000;
+  font-family: 'Roboto Mono', monospace;
+  border-collapse: collapse;
+  width: 100%;
+}
+#pizzas td, #pizzas th {
+  border: 1px solid black;
+  padding: 7px;
+}
+#pizzas tr:nth-child(odd) {
+  background-color: white;
+}
+#pizzas tr:nth-child(even) {
+  background-color: grey;
+}
+#pizzas tr:hover {
+  background-color: green;
+  cursor: pointer;
+}
+#pizzas th {
+  text-transform: uppercase;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  text-align: left;
+  background-color: #017416;
+}
+
+/* Footer */
+footer {
+  padding-top: 100px;
+  margin-bottom: 50px;
+}
+
+/* Media Queries */
+@media (max-width: 899px){
+  nav {
+    width: 100%;
+    margin: 25px;
+    margin-left: 0px;
+    margin-top: 30px;
+  }
+  img {
+    width: 100%;
+    height: auto;
+  }
+  a {
+    display: block;
+    width: 80%;
+    padding: 6px;
+    font-size: 14px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 300px){
+  nav {
+    width: 100%;
+    margin: 25px;
+    margin-left: 10px;
+    margin-top: 550px;
+  }
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
